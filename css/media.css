@@ -1,0 +1,164 @@
+@media (max-width: 972px){
+    .slider-nav .slick-track div + div{
+        margin-left: 18px;
+    }
+}
+@media (max-width: 960px){
+    .header__menu-btn{
+        display: block; 
+    }
+    #toggle::before{
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: #000;
+        transition: 0.2s;
+        transform: translateY(10px);
+        box-shadow: 0 10px 0 #000;
+    }
+    #toggle.active::before{
+        transform: translateY(14px) rotate(45deg);
+        box-shadow: 0 0 0 #000;
+    }
+    #toggle::after{
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: #000;
+        transition: 0.2s;
+        transform: translateY(30px);
+    }
+    #toggle.active::after{
+        transform: translateY(14px) rotate(-45deg);
+    }
+    .header__menu > ul{ /* только первая ul */
+        display: none;
+        position: absolute;
+        top: 77px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 2;
+        border-bottom: 5px solid #e8603c;
+    }
+    .header__menu li{
+        display: block;
+        text-align: center;
+        border-top: 1px solid black;
+        align-items: center;
+    }
+    .header__menu li + li {
+        margin-left: 0px;
+    }
+    .works__inner{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .works__inner .works__inner-item{
+        width: 50%;
+        margin-left: 0px;
+    }
+    .item-box img {
+        width: 95%;
+    }
+    .item-box-bottom{
+        width: 95%;
+    }
+    .item-box{
+        padding-bottom: 20px;
+    }
+    .slider .slick-arrow img{
+        display: none;
+    }
+    .works__title{
+        margin: 0 auto;
+    }
+}
+@media (max-width: 890px){
+    .news__inner{
+        flex-wrap: wrap;
+        
+    }
+    .news__div{
+        width: 100%;
+    }
+    .news-title{
+        margin-top: 25px;
+        margin: 0 auto;;
+    }
+    .news__div + .news__div{
+        margin-top: 15px;
+    }
+    .news-button{
+        margin: 0 auto;
+    }
+    .footer__inner{
+        flex-wrap: wrap;
+    }
+    .footer__item{
+        max-width: 100%;
+        padding-right: 30px;
+    }
+    .footer__item-twitwidget{
+        padding-left: 35px;
+    }
+    .footer__item-contactus{
+        padding-left: 35px;
+    }
+}
+
+
+
+@media (max-width: 610px){
+    .works__inner .works__inner-item{
+        width: 100%;
+        display: flex;
+        justify-content:center;
+    }
+    .item-box img {
+        width: 100%;
+    }
+    .item-box-bottom{
+        width: 100%;
+    }
+    .item-box{
+        padding-bottom: 10px;
+        width: 100%;
+    }
+}
+@media (max-width: 515px){
+    .slider__item-box{
+        width: 100%;
+        left: 0;
+        bottom: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Самый низ. min-width - Все мониторы которые больше 960*/
+@media (min-width: 960px){
+    .header__menu > ul{
+        display: block !important; /* Баг с header' ом*/
+    }
+
+}
